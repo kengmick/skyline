@@ -1,0 +1,20 @@
+function agentpress_property_details_filter( $details ) {
+
+    $details['col1'] = array( 
+        __( 'Price:', 'agentpress' )   => '_listing_price', 
+        __( 'Address:', 'agentpress' ) => '_listing_address', 
+        __( 'City:', 'agentpress' )    => '_listing_city', 
+        __( 'Neighborhood:', 'agentpress' )   => '_listing_state', 
+        __( 'ZIP leave this blank:', 'agentpress' )     => '_listing_zip',
+    );
+    $details['col2'] = array( 
+        __( 'MLS#:', 'agentpress' )       => '_listing_mls', 
+        __( 'Square Feet:', 'agentpress' ) => '_listing_sqft', 
+        __( 'Bedrooms:', 'agentpress' )    => '_listing_bedrooms', 
+        __( 'Bathrooms:', 'agentpress' )   => '_listing_bathrooms', 
+        __( 'Basement:', 'agentpress' )    => '_listing_basement',
+    );
+
+    return $details;
+
+}
